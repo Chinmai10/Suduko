@@ -1,7 +1,7 @@
 import pygame
 
 WIDTH = 600
-background_color =  (245,200,200)
+background_color =  (245,205,200)
 
 def main():
     pygame.init()
