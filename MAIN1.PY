@@ -31,6 +31,10 @@ def possible(x,y,n ):
 
 
 
+
+
+
+
 def solve():
     global grid 
     for y in range(9):
@@ -39,9 +43,14 @@ def solve():
                 for n in range (1,10):
                     if possible(x,y,n):
                         grid[y][x] = n 
+                        solve()
+                        grid[y][x] = 0
+                return         
+    print(grid )
+    input("more?")
         
     
-    
+solve() 
     
     
 
