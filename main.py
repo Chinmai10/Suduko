@@ -1,9 +1,17 @@
 import pygame
-import 
+import requests
+
+
+
+
 
 
 WIDTH =550
-background_color =  (251,247,245)
+background_color =  (250,250,250)
+
+
+response
+
 
 def main():
     pygame.init()
@@ -16,6 +24,7 @@ def main():
         if(i%3 ==0 ):
             pygame.draw.line(win , (0,0 ,0) , (50+ 50*i , 50  ) , (50 + 50*i ,500),6)
             pygame.draw.line(win , (0,0 ,0) , ( 50 , 50+ 50*i  ) , (500  ,50 + 50*i),6)
+            
              
             
             
@@ -26,7 +35,7 @@ def main():
     
     while True :
         for event in pygame.event.get():
-            if event.type == pygame.QUIT : suduko.py
+            if event.type == pygame.QUIT : 
                 pygame.quit()
                 return 
     
